@@ -1,9 +1,9 @@
-<div id='sidebar'>
+<div id='sidebar' class='d-flex fd-c ac-sb'>
 <div class='logo'>
 <a href='<?php echo base_url();?>'><img src='<?php echo base_url();?>assets/img/layout/logo.png'></a>
 </div>
 
-<div class='menusContainer'>
+<div class='menusContainer fl-w100'>
 <ul class='menus'>
 
 <?php //menus data
