@@ -63,8 +63,8 @@ echo "<a class='item' href='books/$slug'>
 <script type='text/javascript' src='<?php echo base_url();?>assets/js/smooth-scrollbar.js'></script>
 <script type='text/javascript'>
 (function(){
-	var scrollBar=window.Scrollbar;
-	scrollBar.init(document.getElementById('main'),{alwaysShowTracks:true,thumbMinSize:30});
+	var scrollBar=window.Scrollbar;var elemScr=document.querySelector('#main');
+	scrollBar.init(elemScr,{alwaysShowTracks:true,thumbMinSize:30});
 })();
 </script>
 </div><!--end main-->

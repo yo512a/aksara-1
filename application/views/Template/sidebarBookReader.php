@@ -7,20 +7,25 @@
 <ul class='menus'>
 
 <?php //menus data
-function selectedMenus($url){
-if($url==current_url()){$selected=" class='selected' data-url='$url'";}else{$selected="";}
-return $selected;
+if(isset($bookReader)){
+echo "<li class='bookReader'>
+<div class='fl-w100 fw-6 ti'>".$bookReader[0]->judul."</div>
+<div class='fl-w100 de d-flex'><i class='fad fa-pencil'></i>".$bookReader[0]->penulis."</div>
+<div class='fl-w100 de d-flex'><i class='fad fa-calendar'></i>".$bookReader[0]->tahun."</div>
+<div class='fl-w100 de d-flex'><i class='fad fa-star'></i>".substr($bookReader[0]->rating/$bookReader[0]->voters,0,4)."</div>
+</li>";
 }
 $menus=array(
 site_url() => "<a href='".base_url()."' title='Beranda'><i class='fas fa-home-lg-alt'></i>Beranda</a>",
-site_url('books') => "<a href='".base_url()."books' title='Buku'><i class='fas fa-book'></i>Buku</a>",
-'#' => "<a href='#' title='Kreativitas'><i class='fas fa-lightbulb'></i>Kreativitas</a>"
+site_url('books') => "<a href='".base_url()."books' title='Buku'><i class='fal fa-book'></i>Buku</a>",
+'#' => "<a href='#' title='Kreativitas'><i class='fal fa-lightbulb'></i>Kreativitas</a>"
 );
 foreach($menus as $m => $val){
-echo "<li".selectedMenus($m).">".$val."</li>";
+echo "<li>".$val."</li>";
 }
 
 ?>
+
 </ul>
 
 <ul class='menus'><div class='title fl-w100'>Halaman Lain</div>

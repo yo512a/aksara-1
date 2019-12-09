@@ -6,10 +6,12 @@
 <link href='<?php echo base_url();?>assets/fonts/fontawesome5_11_2/css/all.min.css' rel='stylesheet'/>
 </head>
 <body>
-<?php $this->load->view('template/navbar');$this->load->view('template/sidebar');?>
+<?php $this->load->view('template/navbar');
+$this->load->view('template/sidebarBookReader',$bookReader);
+?>
 
 <div id='main'>
-<iframe class='fl-w100' width='720' height='720' src='<?php echo base_url();?>assets/pdfViewer/web/viewer.html?file=<?php echo base_url()."assets/file/book/".$bookReader[0]->file;?>'></iframe>
+<iframe class='fl-w100' width='720' height='720' src='<?php echo base_url();?>assets/pdfViewer/web/viewer.html?file=<?php echo urlencode(base_url()."assets/file/book/".$bookReader[0]->file);?>&locale=en-US'></iframe>
 </div>
 <script type='text/javascript' src='<?php echo base_url();?>assets/js/pdf.js'></script>
 <!--<script type='text/javascript'>

@@ -17,8 +17,8 @@ if($_GET['tahun']==$value){return " selected";}else{if($value=="Semua"){return "
 }?>
 <form id='filters' method='get' class='act' data-open='yes'>
 <div class='submitBtn fl-w100'>
-<a class='btn' href='<?php echo base_url("books");?>'>RESET</a>
-<button type='submit' class='btn'>TERAPKAN</button></div>
+<a class='btn' href='<?php echo base_url("books");?>'>Reset</a>
+<button type='submit' class='btn'>Terapkan</button></div>
 <div id='opts' class='fl-w100'>
 <div class='opt'>
 <div class='title'><i class='fad fa-layer-group'></i>Tipe Buku</div>
