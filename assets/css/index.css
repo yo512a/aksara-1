@@ -19,14 +19,15 @@ body{overflow:hidden;font:400 14px "Poppins", Arial, sans-serif;color:#000;margi
 #navbar .searchForm button{float:left;height:40px;background:transparent;border:0;padding:0;font-size:26px}
 /*sidebar*/
 #sidebar{position:fixed;top:0;left:0;width:230px;height:100%;background:#fbfbfb;overflow-x:hidden;overflow-y:auto;z-index:10}
-/**logo**/#sidebar .logo{float:left;width:100%;height:72px;margin:0 0 20px;padding:8px 30px 8px 15px}
-#sidebar .menus{float:left;width:100%;list-style:none;margin:0 0 35px}#sidebar .menus.last{margin:0}
+/**logo**/#sidebar .logo{float:left;width:100%;height:72px;padding:8px 30px 8px 15px}
+#sidebar .menusContainer{max-height:100%}
+#sidebar .menus{float:left;width:100%;list-style:none;margin:0 0 35px}#sidebar .menus:first-child{padding:20px 0 0}#sidebar .menus:last-child{padding:0 0 20px}
 #sidebar .menus .title{text-transform:uppercase;font-size:13px;padding:0 24px;margin:0 0 10px}
 #sidebar .menus li{color:#4c4c4c;font-weight:600;font-size:13px;padding:4px 24px;float:left;width:100%;position:relative;margin:0 0 5px}#sidebar .menus li:last-child{margin:0}
 #sidebar .menus li a{color:#4c4c4c;line-height:20px;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center}
 #sidebar .menus li i{text-align:center;font-size:16px;float:left;height:30px;width:30px;margin:0 17px 0 0;line-height:30px;color:#fff;background:#5c5c5c;overflow:hidden;border-radius:100%;position:relative;-webkit-transition:background ease .1s;transition:background ease .1s}
 #sidebar .menus li i:before{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1}
-#sidebar .menus li i:after{content:'';width:100%;height:100%;position:absolute;top:0;left:0;transform:scale(0);border-radius:100%;background:#031435;-webkit-transition:-webkit-transform ease-out .25s;transition:transform ease-out .25s}
+#sidebar .menus li:not(.bookReader) i:after{content:'';width:100%;height:100%;position:absolute;top:0;left:0;transform:scale(0);border-radius:100%;background:#031435;-webkit-transition:-webkit-transform ease-out .25s;transition:transform ease-out .25s}
 #sidebar .menus li:hover i{background:transparent}
 #sidebar .menus li:hover i:after{-webkit-transform:scale(1);transform:scale(1)}
 #sidebar .menus li.selected i{background:#e1289f}
@@ -35,10 +36,9 @@ body{overflow:hidden;font:400 14px "Poppins", Arial, sans-serif;color:#000;margi
 #sidebar .menus li.selected{font-weight:700}
 #sidebar .menus li.selected:before{content:'';position:absolute;left:0;top:0;height:100%;width:4px;background:#e1289f}
 #sidebar .menus .bookReader{font-weight:400;padding:0 24px 20px 24px;margin:0 0 20px;border-bottom:1px solid #e3e9ed}
-#sidebar .menus .bookReader i{min-width:24px;font-size:14px;margin:0 8px 0 0}
-#sidebar .menus .bookReader .ti{color:#000;margin:0 0 10px;line-height:1em;position:relative}
+#sidebar .menus .bookReader i{background:transparent;color:#000;line-height:1.2em;min-width:30px}
+#sidebar .menus .bookReader .ti{font-size:14px;color:#000;margin:0 0 10px;line-height:1em;position:relative}
 #sidebar .menus .bookReader .ti:before{content:'';position:absolute;left:-24px;top:0;height:100%;width:4px;background:#e1289f}
-#sidebar .menus .bookReader .de{font-size:13px}
 /*wrapper*/
 #headercover{overflow:hidden;width:100%;float:left;margin:0 0 25px;height:230px;position:relative}
 #headercover .bgCvr{position:absolute;top:0;left:0;width:100%;height:100%;background:url(http://localhost/aksara/assets/img/layout/closeup-photo-of-assorted-title-books-1122865.jpg) no-repeat center center / cover;z-index:1}
