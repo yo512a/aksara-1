@@ -10,7 +10,7 @@
 $this->load->view('template/sidebarBookReader',$bookReader);
 ?>
 
-<div id='main'>
+<div id='main' class='d-flex fd-c'>
 <iframe class='fl-w100' width='720' height='720' src='<?php echo base_url();?>assets/pdfViewer/web/viewer.html?file=<?php echo urlencode(base_url()."assets/file/book/".$bookReader[0]->file);?>&locale=en-US'></iframe>
 </div>
 <?php $useragent=$_SERVER['HTTP_USER_AGENT'];
