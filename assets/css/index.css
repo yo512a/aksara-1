@@ -74,7 +74,7 @@ body{overflow:hidden;font:400 14px "Poppins", Arial, sans-serif;color:#000;margi
 /*footer*/#footer{color:#eee;margin:50px 0 0;background:#0c0c0d;padding:70px 0 0}
 #footer .container{width:100%;max-width:980px;margin:0 auto;padding:0 40px}
 #footer .col-l{float:left;width:25%}#footer .col-l.col-w15{width:15%}#footer .col-r{float:right;width:70%}
-#footer .col-100{margin:20px 0 0}
+#footer .col-100{margin:35px 0 0}
 #footer .col .widget{margin:0 0 25px;float:left;width:100%}
 #footer .col .widget:last-child{margin:0}
 #footer .menus a{float:left;line-height:1.1em;margin:0 15px 0 0;font-size:13px;font-weight:600;color:#eee}#footer .menus a:last-child{margin:0}
