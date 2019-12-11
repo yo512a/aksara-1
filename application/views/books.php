@@ -10,6 +10,7 @@
 
 <div id='main'>
 
+<?php $this->load->view('template/footer');?>
 </div>
 
 <?php $useragent=$_SERVER['HTTP_USER_AGENT'];
