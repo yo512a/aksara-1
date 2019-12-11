@@ -86,7 +86,7 @@ body{overflow:hidden;font:400 14px "Poppins", Arial, sans-serif;color:#000;margi
 #footer .sosmed a:hover i:after{-webkit-transform:scale(1);transform:scale(1)}#footer .sosmed a:hover i{background:transparent;color:#eee}
 #footer .subscribe .de{text-align:center;margin:0 0 20px}
 #footer .subscribe .tf{float:left;width:78%;border-radius:20px;padding:10px 8px;text-align:center;border:2px solid #212223;background:transparent;color:#eee;-webkit-transition:all ease .2s;transition:all ease .2s}#footer .subscribe .tf.submit{float:right;width:20%;cursor:pointer;margin:0;border:1px solid #e1289f;padding:10px 15px}#footer .subscribe .tf.submit:hover{background:#e1289f}#footer .subscribe input.tf:focus{border-color:transparent #e1289f}
-#footer .credit{margin:20px 0 0;padding:30px 15px;text-align:center;background:#080809;color:#aaa}
+#footer .credit{margin:35px 0 0;padding:30px 15px;text-align:center;background:#080809;color:#aaa}
 /*Books*/
 /**Filter**/
 #filters{overflow:hidden;position:fixed;left:0;top:72px;width:230px;height:calc(100% - 72px);padding:10px 0 0 0;background:#fff;-webkit-transform:translateX(-100px);transform:translateX(-100px);visibility:hidden;opacity:0;-webkit-transition:-webkit-transform cubic-bezier(.08,.82,.17,1) .25s,visibility ease .25s .25s,opacity ease .25s;transition:transform cubic-bezier(.08,.82,.17,1) .25s,visibility ease .25s .25s,opacity ease .25s;z-index:11}
